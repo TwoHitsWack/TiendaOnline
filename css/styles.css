@@ -230,3 +230,39 @@ header button{
     top: 20px;
     opacity: 1;
 }
+
+/* >---------Separador-> */
+.mensaje{
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+    background: url(/img/section.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mensaje::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mensaje p{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-shadow:
+    5px 0 10px #000;
+}
